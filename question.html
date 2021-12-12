@@ -54,18 +54,18 @@
                 Faculty: <span class="heavy"><?php echo $faculty_name; ?></span>&nbsp;&nbsp;
                 Start Time: <span class="heavy"><?php echo $_SESSION['strt_time']; ?></span>&nbsp;&nbsp;
                 End Time: <span class="heavy"><?php echo $_SESSION['end_time']; ?></span>&nbsp;&nbsp;
-                <?php 
+               <!-- <?php 
                     //Getting Time Difference
                     $startTime=strtotime($_SESSION['end_time']);
                     $currentTime=strtotime(date('h:i:s A'));
                     $timeDifference=$startTime-$currentTime;
                     
-                ?>
+                ?> -->
                 <span class="timer" data-seconds-left=<?php echo $timeDifference; ?>></span>
                 <form method="post" action="">
                     <div class="welcome">
                         <div class="ques">
-                        <?php 
+                      <!--  <?php 
                             
                             if(!isset($_SESSION['all_qns']))
                             {
@@ -128,11 +128,11 @@
                             }
                             //Checking ALl Answered Questions
                             
-                        ?>
-                        <form method="post" action="">
+                        ?> -->
+                        <form method="" action="">
                             <!--Question Starts Here-->
                             <div class="left-ques">
-                            <?php 
+                            <!-- <?php 
                             if(!isset($_SESSION['sn']))
                             {
                                 $_SESSION['sn']=1;
@@ -157,7 +157,7 @@
                                         <img src="<?php echo SITEURL; ?>images/questions/<?php echo $image_name; ?>" alt="beyond boundaries" />
                                         <?php
                                     }
-                                ?>
+                                ?> -->
                                 
                             </div>
                             <!--Question Ends Here-->
@@ -192,7 +192,7 @@
                                 </a>
                             </div>
                         </form>
-                        <?php 
+                        <!--<?php 
                             if(isset($_POST['submit']))
                             {
                                 //echo "Clicked";
@@ -314,7 +314,7 @@
                                 }
                                 
                             }
-                        ?>
+                        ?> -->
                         </div>
                     </div>
                 </form>

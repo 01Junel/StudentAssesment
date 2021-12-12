@@ -49,11 +49,11 @@
 <!--Body Starts Here-->
         <div class="main">
             <div class="content">
-                
+               <!-- 
                 User: <span class="heavy"><?php echo $full_name; ?></span>&nbsp;&nbsp;
                 Faculty: <span class="heavy"><?php echo $faculty_name; ?></span>&nbsp;&nbsp;
                 Start Time: <span class="heavy"><?php echo $_SESSION['strt_time']; ?></span>&nbsp;&nbsp;
-                End Time: <span class="heavy"><?php echo $_SESSION['end_time']; ?></span>&nbsp;&nbsp;
+                End Time: <span class="heavy"><?php echo $_SESSION['end_time']; ?></span>&nbsp;&nbsp; -->
                <!-- <?php 
                     //Getting Time Difference
                     $startTime=strtotime($_SESSION['end_time']);
@@ -131,7 +131,7 @@
                         ?> -->
                         <form method="" action="result.html">
                             <!--Question Starts Here-->
-                            <div class="left-ques">
+                           <!-- <div class="left-ques">
                             <!-- <?php 
                             if(!isset($_SESSION['sn']))
                             {
@@ -174,7 +174,20 @@
                                 <input type="hidden" name="right_answer" value="<?php echo $answer; ?>" />
                                 <input type="hidden" name="marks" value="<?php echo $marks; ?>" />
                             </div>
-                            <!--Answer Ends Here-->
+                            <!--Answer Ends Here--> -->
+                                
+                            
+                           <div class="clearfix"></div>
+                            
+                               <!-- <?php echo $question; ?> --> Question 1<br /><br />
+                            <input type="radio" name="answer" value="1" /> <span class="radio-ans">Choice 1</span>  <hr />
+                            <input type="radio" name="answer" value="2" /> <span class="radio-ans">Choice 2</span> <hr />
+                            <input type="radio" name="answer" value="3" /> <span class="radio-ans">Choice 3 </span>  <hr />
+                            <input type="radio" name="answer" value="4" /> <span class="radio-ans">Choice 4 <hr /><br />&nbsp;
+                            <input type="hidden" name="question_id" value="<?php echo $question_id; ?>" />
+                            <input type="hidden" name="right_answer" value="<?php echo $answer; ?>" />
+                                 
+                                
                             <div class="clearfix"></div>
                             
                                <!-- <?php echo $question; ?> --> Question 2<br /><br />

@@ -62,7 +62,7 @@
                     
                 ?> -->
                 <span class="timer" data-seconds-left=<?php echo $timeDifference; ?>></span>
-                <form method="post" action="">
+                <form method="" action="">
                     <div class="welcome">
                         <div class="ques">
                       <!--  <?php 
@@ -147,9 +147,9 @@
                             {
                                 header('location:'.SITEURL.'index.php?page=endSession');
                             }
-                            ?>. 
+                            ?>. -->
                             
-                                <?php echo $question; ?><br />
+                              <!--  <?php echo $question; ?><br />
                                 <?php 
                                     if($image_name!="")
                                     {
@@ -158,6 +158,7 @@
                                         <?php
                                     }
                                 ?> -->
+                                Question 2
                                 
                             </div>
                             <!--Question Ends Here-->
@@ -176,7 +177,7 @@
                             <!--Answer Ends Here-->
                             <div class="clearfix"></div>
                             <!--
-                                <?php echo $question; ?> <br /><br />
+                               <!-- <?php echo $question; ?> --> Question 2<br /><br />
                             <input type="radio" name="answer" value="1" /> <span class="radio-ans"><?php echo $first_answer; ?></span>  <hr />
                             <input type="radio" name="answer" value="2" /> <span class="radio-ans"><?php echo $second_answer; ?></span> <hr />
                             <input type="radio" name="answer" value="3" /> <span class="radio-ans"><?php echo $third_answer; ?></span>  <hr />

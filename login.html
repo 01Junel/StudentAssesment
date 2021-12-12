@@ -1,21 +1,52 @@
+<!DOCTYPE html> 
+<html lang="en-US">
+    <head>
+        <!--Meta Tags Starts Here-->
+        <meta charset="UTF-8" />
+        <meta name="author" content="STUDENT ASSESSMENT" />
+        <meta name="description" content="Test Preparation Portal by Vijay Thapa." />
+        <meta name="keywords" content="Test Preaparation, Online Portal, Online Exam System" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <!--Meta Tags Ends Here-->
+        <title>STUDENT ASSESSMENT</title>
+        
+        <!--COUNT DOWN TIMER STARTS HERE-->
+        <script src="<?php echo SITEURL; ?>/assets/js/countdown/jquery.js"></script>
+        <script src="<?php echo SITEURL; ?>/assets/js/countdown/jquery.simple.timer.js"></script>
+        <script>
+          $(function(){
+            $('.timer').startTimer();
+          });
+        </script>
+        <!--COUNT DOWN TIMER ENDS HERE-->
+        
+        <!--ADDING CKEDITOR HERE-->
+        <script type="text/javascript" src="<?php echo SITEURL; ?>/assets/ckeditor/ckeditor.js"></script>
+        
+        <!--CSS File Starts Here-->
+        <!-- <link rel="stylesheet" type="text/css" href="<?php echo SITEURL; ?>/assets/css/style.css" /> -->
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+        <!--CSS File Ends Here-->
+    </head>
+
 <!--Body Starts Here-->
         <div class="main">
             <div class="login">
                 <form method="post" action="">
                     <h2>Log In</h2>
-                    <?php 
+                <!--    <?php 
                         if(isset($_SESSION['invalid']))
                         {
                             echo $_SESSION['invalid'];
                             unset($_SESSION['invalid']);
                         }
-                    ?>
+                    ?> -->
                     <input type="text" name="username" placeholder="Username" required="true" />
                     <input type="password" name="password" placeholder="Password" required="true" />
                     <input type="submit" name="submit" value="Log In" class="btn-go" />
                     <input type="reset" name="reset" value="Reset" class="btn-exit" />
                 </form>
-                <?php 
+               <!-- <?php 
                     if(isset($_POST['submit']))
                     {
                         //echo "CLicked";
@@ -40,7 +71,7 @@
                             header('location:'.SITEURL.'index.php?page=login');
                         }
                     }
-                ?>
+                ?>-->
             </div>
         </div>
         <!--Body Ends Here-->

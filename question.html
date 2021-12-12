@@ -129,7 +129,7 @@
                             //Checking ALl Answered Questions
                             
                         ?> -->
-                        <form method="" action="">
+                        <form method="" action="result.html">
                             <!--Question Starts Here-->
                             <div class="left-ques">
                             <!-- <?php 
@@ -158,35 +158,70 @@
                                         <?php
                                     }
                                 ?> -->
-                                Question 2
+                                Question 1
                                 
                             </div>
                             <!--Question Ends Here-->
                             
                             <!--Answer Starts Here-->
                             <div class="answers">
-                                <input type="radio" name="answer" value="1" required="true" /> <span class="radio-ans"><?php echo $first_answer; ?></span>  <hr /><br />
-                                <input type="radio" name="answer" value="2" required="true" /> <span class="radio-ans"><?php echo $second_answer; ?></span> <hr /><br />
-                                <input type="radio" name="answer" value="3" required="true" /> <span class="radio-ans"><?php echo $third_answer; ?></span>  <hr /><br />
-                                <input type="radio" name="answer" value="4" required="true" /> <span class="radio-ans"><?php echo $fourth_answer; ?></span>  <hr /><br />
-                                <input type="radio" name="answer" value="5" required="true" /> <span class="radio-ans"><?php echo $fifth_answer; ?> <hr /><br />&nbsp;
+                                <input type="radio" name="answer" value="1" required="true" /> <span class="radio-ans">Choice 1</span>  <hr /><br />
+                                <input type="radio" name="answer" value="2" required="true" /> <span class="radio-ans">Choice 2</span> <hr /><br />
+                                <input type="radio" name="answer" value="3" required="true" /> <span class="radio-ans">Choice 3</span>  <hr /><br />
+                                <input type="radio" name="answer" value="4" required="true" /> <span class="radio-ans">Choice 4</span>  <hr /><br />
+                                <input type="radio" name="answer" value="5" required="true" /> <span class="radio-ans">Choice 5<hr /><br />&nbsp;
                                 <input type="hidden" name="question_id" value="<?php echo $question_id; ?>" />
                                 <input type="hidden" name="right_answer" value="<?php echo $answer; ?>" />
                                 <input type="hidden" name="marks" value="<?php echo $marks; ?>" />
                             </div>
                             <!--Answer Ends Here-->
                             <div class="clearfix"></div>
-                            <!--
+                            
                                <!-- <?php echo $question; ?> --> Question 2<br /><br />
-                            <input type="radio" name="answer" value="1" /> <span class="radio-ans"><?php echo $first_answer; ?></span>  <hr />
-                            <input type="radio" name="answer" value="2" /> <span class="radio-ans"><?php echo $second_answer; ?></span> <hr />
-                            <input type="radio" name="answer" value="3" /> <span class="radio-ans"><?php echo $third_answer; ?></span>  <hr />
-                            <input type="radio" name="answer" value="4" /> <span class="radio-ans"><?php echo $fourth_answer; ?> <hr /><br />&nbsp;
+                            <input type="radio" name="answer" value="1" /> <span class="radio-ans">Choice 1</span>  <hr />
+                            <input type="radio" name="answer" value="2" /> <span class="radio-ans">Choice 2</span> <hr />
+                            <input type="radio" name="answer" value="3" /> <span class="radio-ans">Choice 3 </span>  <hr />
+                            <input type="radio" name="answer" value="4" /> <span class="radio-ans">Choice 4 <hr /><br />&nbsp;
                             <input type="hidden" name="question_id" value="<?php echo $question_id; ?>" />
                             <input type="hidden" name="right_answer" value="<?php echo $answer; ?>" />
-                            -->
+                            
+                             <div class="clearfix"></div>
+                            
+                               <!-- <?php echo $question; ?> --> Question 3<br /><br />
+                            <input type="radio" name="answer" value="1" /> <span class="radio-ans">Choice 1</span>  <hr />
+                            <input type="radio" name="answer" value="2" /> <span class="radio-ans">Choice 2</span> <hr />
+                            <input type="radio" name="answer" value="3" /> <span class="radio-ans">Choice 3 </span>  <hr />
+                            <input type="radio" name="answer" value="4" /> <span class="radio-ans">Choice 4 <hr /><br />&nbsp;
+                            <input type="hidden" name="question_id" value="<?php echo $question_id; ?>" />
+                            <input type="hidden" name="right_answer" value="<?php echo $answer; ?>" />
+                            
+                            <div class="clearfix"></div>
+                            
+                               <!-- <?php echo $question; ?> --> Question 4<br /><br />
+                            <input type="radio" name="answer" value="1" /> <span class="radio-ans">Choice 1</span>  <hr />
+                            <input type="radio" name="answer" value="2" /> <span class="radio-ans">Choice 2</span> <hr />
+                            <input type="radio" name="answer" value="3" /> <span class="radio-ans">Choice 3 </span>  <hr />
+                            <input type="radio" name="answer" value="4" /> <span class="radio-ans">Choice 4 <hr /><br />&nbsp;
+                            <input type="hidden" name="question_id" value="<?php echo $question_id; ?>" />
+                            <input type="hidden" name="right_answer" value="<?php echo $answer; ?>" />
+                            
+                            <div class="clearfix"></div>
+                            
+                               <!-- <?php echo $question; ?> --> Question 5<br /><br />
+                            <input type="radio" name="answer" value="1" /> <span class="radio-ans">Choice 1</span>  <hr />
+                            <input type="radio" name="answer" value="2" /> <span class="radio-ans">Choice 2</span> <hr />
+                            <input type="radio" name="answer" value="3" /> <span class="radio-ans">Choice 3 </span>  <hr />
+                            <input type="radio" name="answer" value="4" /> <span class="radio-ans">Choice 4 <hr /><br />&nbsp;
+                            <input type="hidden" name="question_id" value="<?php echo $question_id; ?>" />
+                            <input type="hidden" name="right_answer" value="<?php echo $answer; ?>" />
+                            
+                             
+                              
+                                
+                                
+                               
                             <div class="buttons">
-                                <input type="submit" name="submit" value="Submit and Next" class="btn-go" />
+                                <input type="submit" name="submit" value="Submit" class="btn-go" />
                                 
                                 <a href="<?php echo SITEURL; ?>index.php?page=logout">
                                     <button type="button" class="btn-exit">&nbsp; Quit &nbsp;</button>

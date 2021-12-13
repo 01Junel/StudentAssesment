@@ -72,23 +72,7 @@
                     <h2>Student Manager</h2>
                     
                     <a href=""><button type="button" class="btn-add">Add Student</button></a>
-                   <!-- <?php
-                        if(isset($_SESSION['add']))
-                        {
-                            echo $_SESSION['add'];
-                            unset($_SESSION['add']);
-                        }
-                        if(isset($_SESSION['update']))
-                        {
-                            echo $_SESSION['update'];
-                            unset($_SESSION['update']);
-                        }
-                        if(isset($_SESSION['delete']))
-                        {
-                            echo $_SESSION['delete'];
-                            unset($_SESSION['delete']);
-                        }
-                    ?> -->
+                  
                     <table>
                         <tr>
                             <th>S.N.</th>
@@ -134,8 +118,8 @@
                                     </td>
                                     <td><!--<?php echo $is_active; ?>--></td>
                                     <td>
-                                        <a href="<?php echo SITEURL; ?>admin/index.php?page=update_student&student_id=<?php echo $student_id; ?>"><button type="button" class="btn-update">UPDATE</button></a> 
-                                        <a href="<?php echo SITEURL; ?>admin/pages/delete.php?id=<?php echo $student_id; ?>&page=students"><button type="button" class="btn-delete" onclick="return confirm('Are you sure?')">DELETE</button></a>
+                                        <!--<a href="<?php echo SITEURL; ?>admin/index.php?page=update_student&student_id=<?php echo $student_id; ?>"><button type="button" class="btn-update">UPDATE</button></a> 
+                                        <a href="<?php echo SITEURL; ?>admin/pages/delete.php?id=<?php echo $student_id; ?>&page=students"><button type="button" class="btn-delete" onclick="return confirm('Are you sure?')">DELETE</button></a> -->
                                     </td>
                                 </tr>
                                 <?php

@@ -59,7 +59,7 @@
                     <a href="<?php echo SITEURL; ?>admin/index.php?page=questions"><li>Questions</li></a>
                     <a href="<?php echo SITEURL; ?>admin/index.php?page=results"><li>Results</li></a>
                     <a href="<?php echo SITEURL; ?>admin/index.php?page=settings"><li>Settings</li></a>-->
-                    <a href="index.html" onclick="return confirm('Are you sure?')"><li>Log Out</li></a>
+                    <a href="../index.html" onclick="return confirm('Are you sure?')"><li>Log Out</li></a>
                 </ul>
             </div>
         </nav>
@@ -104,32 +104,32 @@
                                     $student_id=$row['student_id'];
                                     $marks=$row['marks'];
                                     $added_date=$row['added_date'];
-                                    ?>
+                                    ?> -->
                                     <tr>
-                                        <td><?php echo $sn++; ?>. </td>
+                                        <td><!--<?php echo $sn++; ?> --> </td>
                                         <td>
-                                            <?php 
+                                            <!--<?php 
                                                 $tbl_name="tbl_student";
                                                 $full_name=$obj->get_fullname($tbl_name,$student_id,$conn);
                                                 echo $full_name;
-                                            ?>
+                                            ?>-->
                                         </td>
-                                        <td><?php echo $added_date; ?></td>
-                                        <td><?php echo $marks; ?></td>
+                                        <td><!--<?php echo $added_date; ?>--></td>
+                                        <td><!--<?php echo $marks; ?> --></td>
                                         <td>
-                                            <?php 
+                                           <!-- <?php 
                                                 //Get FAculty from STudent ID
                                                 $tbl="tbl_student";
                                                 $tbl2="tbl_faculty";
                                                 $faculty=$obj->get_faculty($tbl,$student_id,$conn);
                                                 echo $faculty_name=$obj->get_facultyname($tbl2,$faculty,$conn);
-                                            ?>
+                                            ?>-->
                                         </td>
                                         <td>
                                             <a href="<?php echo SITEURL; ?>admin/index.php?page=view_result&student_id=<?php echo $student_id; ?>&added_date=<?php echo $added_date; ?>"><button type="button" class="btn-update">VIEW</button></a> 
                                             <a href="<?php echo SITEURL; ?>admin/pages/delete_result.php?summary_id=<?php echo $summary_id; ?>&student_id=<?php echo $student_id; ?>&added_date=<?php echo $added_date; ?>"><button type="button" class="btn-delete">DELETE</button></a>
                                         </td>
-                                    </tr> -->
+                                    </tr> 
                                     <?php
                                 }
                             }

@@ -84,7 +84,8 @@
                             <th>Actions</th>
                         </tr>
                     <!--Displaying All Data From Database-->
-                     <?php 
+                     <!--
+                        <?php 
                         $tbl_name="tbl_student ORDER BY student_id DESC";
                         $query=$obj->select_data($tbl_name);
                         $sn=1;
@@ -121,15 +122,8 @@
                                         <a href="<?php echo SITEURL; ?>admin/index.php?page=update_student&student_id=<?php echo $student_id; ?>"><button type="button" class="btn-update">UPDATE</button></a> 
                                         <a href="<?php echo SITEURL; ?>admin/pages/delete.php?id=<?php echo $student_id; ?>&page=students"><button type="button" class="btn-delete" onclick="return confirm('Are you sure?')">DELETE</button></a>
                                     </td>
-                                </tr>
-                                <?php
-                            }
-                        }
-                        else
-                        {
-                            echo "<tr><td colspan='7'><div class='error'>No Students Added Yet.</div></tr></td>";
-                        }
-                    ?>
+                                </tr> -->
+                              
                         
                          <tr><td colspan='7'><span class='error'>No Results Found Yet.</span></td></tr>
                         

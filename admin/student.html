@@ -72,7 +72,7 @@
                     <h2>Student Manager</h2>
                     
                     <a href="<?php echo SITEURL; ?>admin/index.php?page=add_student"><button type="button" class="btn-add">Add Student</button></a>
-                    <?php
+                   <!-- <?php
                         if(isset($_SESSION['add']))
                         {
                             echo $_SESSION['add'];
@@ -88,7 +88,7 @@
                             echo $_SESSION['delete'];
                             unset($_SESSION['delete']);
                         }
-                    ?>
+                    ?> -->
                     <table>
                         <tr>
                             <th>S.N.</th>
@@ -100,7 +100,7 @@
                             <th>Actions</th>
                         </tr>
                     <!--Displaying All Data From Database-->
-                    <?php 
+                   <!-- <?php 
                         $tbl_name="tbl_student ORDER BY student_id DESC";
                         $query=$obj->select_data($tbl_name);
                         $sn=1;
@@ -118,21 +118,21 @@
                                 $contact=$row['contact'];
                                 $faculty=$row['faculty'];
                                 $is_active=$row['is_active'];
-                                ?>
+                                ?> -->
                                 <tr>
                                     <td><?php echo $sn++; ?> </td>
                                     <td><?php echo $full_name; ?></td>
                                     <td><?php echo $email; ?></td>
                                     <td><?php echo $contact; ?></td>
                                     <td>
-                                        <?php 
+                                        <!--<?php 
                                             //Get FAculty Name from faculty_id
                                             $tbl_name2="tbl_faculty";
                                             $faculty_name=$obj->get_facultyname($tbl_name2,$faculty,$conn); 
                                             echo $faculty_name;
-                                        ?>
+                                        ?> -->
                                     </td>
-                                    <td><?php echo $is_active; ?></td>
+                                    <td><!--<?php echo $is_active; ?>--></td>
                                     <td>
                                         <a href="<?php echo SITEURL; ?>admin/index.php?page=update_student&student_id=<?php echo $student_id; ?>"><button type="button" class="btn-update">UPDATE</button></a> 
                                         <a href="<?php echo SITEURL; ?>admin/pages/delete.php?id=<?php echo $student_id; ?>&page=students"><button type="button" class="btn-delete" onclick="return confirm('Are you sure?')">DELETE</button></a>

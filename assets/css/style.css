@@ -61,6 +61,9 @@ Version: 1.0
 .header .wrapper .logo img{
     width: 100%;
 }
+.header .wrapper .logo2 img{
+    width: 45%;
+}
 .header .wrapper .head-title{
     width: 80%;
 }

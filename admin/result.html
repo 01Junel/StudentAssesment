@@ -73,13 +73,13 @@
                 <div class="report">
                     <h2>Result Manager</h2>
                     <!--<button type="button" class="btn-add">Add User</button>-->
-                    <?php 
+                  <!--  <?php 
                         if(isset($_SESSION['delete']))
                         {
                             echo $_SESSION['delete'];
                             unset($_SESSION['delete']);
                         }
-                    ?>
+                    ?> -->
                     <table>
                         <tr>
                             <th>S.N.</th>
@@ -90,7 +90,7 @@
                             <th>Actions</th>
                         </tr>
                         
-                        <?php 
+                       <!-- <?php 
                             $tbl_name="tbl_result_summary ORDER BY added_date DESC";
                             $query=$obj->select_data($tbl_name);
                             $res=$obj->execute_query($conn,$query);
@@ -129,7 +129,7 @@
                                             <a href="<?php echo SITEURL; ?>admin/index.php?page=view_result&student_id=<?php echo $student_id; ?>&added_date=<?php echo $added_date; ?>"><button type="button" class="btn-update">VIEW</button></a> 
                                             <a href="<?php echo SITEURL; ?>admin/pages/delete_result.php?summary_id=<?php echo $summary_id; ?>&student_id=<?php echo $student_id; ?>&added_date=<?php echo $added_date; ?>"><button type="button" class="btn-delete">DELETE</button></a>
                                         </td>
-                                    </tr>
+                                    </tr> -->
                                     <?php
                                 }
                             }
@@ -137,7 +137,7 @@
                             {
                                 echo "<tr><td colspan='7'><span class='error'>No Results Found Yet.</span></td></tr>";
                             }
-                        ?>
+                        ?> 
                         
                     </table>
                 </div>

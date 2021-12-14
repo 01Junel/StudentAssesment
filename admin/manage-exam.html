@@ -139,12 +139,12 @@ if(!isset($_SESSION['admin']['adminnakalogin']) == true) header("location:index.
                                 <label>Course</label>
                                 <select class="form-control" name="courseId" required="">
                                   <option value="<?php echo $selExamRow['cou_id']; ?>"><?php echo $selCourse['courseName']; ?></option>
-                                  <?php 
+                                 <!-- <?php 
                                     $selAllCourse = $conn->query("SELECT * FROM course_tbl ORDER BY cou_id DESC");
                                     while ($selAllCourseRow = $selAllCourse->fetch(PDO::FETCH_ASSOC)) { ?>
-                                      <option value="<?php echo $selAllCourseRow['cou_id']; ?>"><?php echo $selAllCourseRow['cou_name']; ?></option>
+                                      <option value="BSIT'>BSIT</option>
                                     <?php }
-                                   ?>
+                                   ?> -->
                                 </select>
                               </div>
 
@@ -186,13 +186,13 @@ if(!isset($_SESSION['admin']['adminnakalogin']) == true) header("location:index.
                    
                   </div>
                   <div class="col-md-6">
-                    <?php 
+                   <!-- <?php 
                         $selQuest = $conn->query("SELECT * FROM exam_question_tbl WHERE exam_id='$exId' ORDER BY eqt_id desc");
-                    ?>
+                    ?> -->
                      <div class="main-card mb-3 card">
                           <div class="card-header"><i class="header-icon lnr-license icon-gradient bg-plum-plate"> </i>Exam Question's 
                             <span class="badge badge-pill badge-primary ml-2">
-                              <?php echo $selQuest->rowCount(); ?>
+                           <!--   <?php echo $selQuest->rowCount(); ?> --!
                             </span>
                              <div class="btn-actions-pane-right">
                                 <button class="btn btn-sm btn-primary " data-toggle="modal" data-target="#modalForAddQuestion">Add Question</button>
@@ -202,7 +202,7 @@ if(!isset($_SESSION['admin']['adminnakalogin']) == true) header("location:index.
                             <div class="scroll-area-sm" style="min-height: 400px;">
                                <div class="scrollbar-container">
 
-                            <?php 
+                         <!--   <?php 
                                
                                if($selQuest->rowCount() > 0)
                                {  ?>
@@ -283,17 +283,17 @@ if(!isset($_SESSION['admin']['adminnakalogin']) == true) header("location:index.
                                                   </td>
                                                 </tr>
                                             <?php }
-                                           ?>
+                                           ?> -->
                                         </tbody>
                                     </table>
                                 </div>
-                               <?php }
+                              <!-- <?php }
                                else
                                { ?>
                                   <h4 class="text-primary">No question found...</h4>
                                  <?php
                                }
-                             ?>
+                             ?> -->
                                </div>
                             </div>
 
@@ -309,8 +309,14 @@ if(!isset($_SESSION['admin']['adminnakalogin']) == true) header("location:index.
             </div>
       
         
-
-<!-- MAO NI IYA FOOTER -->
-<?php include("includes/footer.php"); ?>
-
-<?php include("includes/modals.php"); ?>
+<!--Footer Starts Here-->
+        <footer class="footer">
+            <div class="wrapper">
+                <p>
+                    All Rights Reserved.    
+                    By The Developer.
+                </p>
+            </div>
+        </footer>
+        <!--Footer Ends Here-->
+</html>

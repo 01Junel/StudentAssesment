@@ -192,7 +192,7 @@ if(!isset($_SESSION['admin']['adminnakalogin']) == true) header("location:index.
                      <div class="main-card mb-3 card">
                           <div class="card-header"><i class="header-icon lnr-license icon-gradient bg-plum-plate"> </i>Exam Question's 
                             <span class="badge badge-pill badge-primary ml-2">
-                           <!--   <?php echo $selQuest->rowCount(); ?> --!
+                              <?php echo $selQuest->rowCount(); ?> --!
                             </span>
                              <div class="btn-actions-pane-right">
                                 <button class="btn btn-sm btn-primary " data-toggle="modal" data-target="#modalForAddQuestion">Add Question</button>
@@ -283,11 +283,11 @@ if(!isset($_SESSION['admin']['adminnakalogin']) == true) header("location:index.
                                                   </td>
                                                 </tr>
                                             <?php }
-                                           ?> -->
+                                           ?> 
                                         </tbody>
                                     </table>
                                 </div>
-                              <!-- <?php }
+                              <?php }
                                else
                                { ?>
                                   <h4 class="text-primary">No question found...</h4>

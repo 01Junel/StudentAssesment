@@ -101,7 +101,7 @@ if(!isset($_SESSION['admin']['adminnakalogin']) == true) header("location:index.
 
 <div class="app-main__outer">
         <div class="app-main__inner">
-            <div class="app-page-title">
+          <!--  <div class="app-page-title">
                 <div class="page-title-wrapper">
                      <div class="page-title-heading">
                         <div> MANAGE EXAM
@@ -110,7 +110,7 @@ if(!isset($_SESSION['admin']['adminnakalogin']) == true) header("location:index.
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>-->
             </div>        
             
             <div class="col-md-12">
@@ -126,7 +126,7 @@ if(!isset($_SESSION['admin']['adminnakalogin']) == true) header("location:index.
                                <div class="form-group">
                                 <label>Course</label>
                                 <select class="form-control" name="courseId" required="">
-                                  <option value="<?php echo $selExamRow['cou_id']; ?>"><?php echo $selCourse['courseName']; ?></option>
+                                  <option value="BSIT">BSIT</option>
                                  <!-- <?php 
                                     $selAllCourse = $conn->query("SELECT * FROM course_tbl ORDER BY cou_id DESC");
                                     while ($selAllCourseRow = $selAllCourse->fetch(PDO::FETCH_ASSOC)) { ?>

@@ -210,7 +210,7 @@ if(!isset($_SESSION['admin']['adminnakalogin']) == true) header("location:index.
                                                while ($selQuestionRow = $selQuest->fetch(PDO::FETCH_ASSOC)) { ?> -->
                                                 <tr>
                                                         <td >
-                                                            <b><Question 1 </b><br>
+                                                            <b>Question 1 </b><br>
                                                            <!-- <?php
                                                               // Choice A
                                                               if($selQuestionRow['exam_ch1'] == $selQuestionRow['exam_answer'])
@@ -218,9 +218,9 @@ if(!isset($_SESSION['admin']['adminnakalogin']) == true) header("location:index.
                                                                 <span class="pl-4 text-success">A - Choice A</span><br>
                                                             <!--  <?php }
                                                               else
-                                                              { ?> 
-                                                                <span class="pl-4">A - <?php echo $selQuestionRow['exam_ch1']; ?></span><br>
-                                                              <?php } 
+                                                              { ?> -->
+                                                                <span class="pl-4">A - Choice A</span><br>
+                                                              <!--<?php } 
 
                                                               // Choice B
                                                               if($selQuestionRow['exam_ch2'] == $selQuestionRow['exam_answer'])
@@ -274,13 +274,13 @@ if(!isset($_SESSION['admin']['adminnakalogin']) == true) header("location:index.
                                         </tbody>
                                     </table>
                                 </div>
-                              <?php }
+                             <!-- <?php }
                                else
                                { ?>
                                   <h4 class="text-primary">No question found...</h4>
                                  <?php
                                }
-                             ?> 
+                             ?> -->
                                </div>
                             </div>
 

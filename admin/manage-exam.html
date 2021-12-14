@@ -260,6 +260,109 @@ if(!isset($_SESSION['admin']['adminnakalogin']) == true) header("location:index.
                                                          <button type="button" id="deleteQuestion" data-id="5"  class="btn btn-danger btn-sm">Delete</button>
                                                         </td>
                                                     </tr>
+                                         
+                                               hile ($selQuestionRow = $selQuest->fetch(PDO::FETCH_ASSOC)) { ?> -->
+                                                <tr>
+                                                        <td >
+                                                            <b>Question 1 </b><br>
+                                                           <!-- <?php
+                                                              // Choice A
+                                                              if($selQuestionRow['exam_ch1'] == $selQuestionRow['exam_answer'])
+                                                              { ?> -->
+                                                                <span class="pl-4 text-success">A - Choice A</span><br>
+                                                            <!--?php }
+                                                              else
+                                                              { ?> 
+                                                                <span class="pl-4">A - Choice A</span><br>
+                                                              <?php } 
+                                                              // Choice B
+                                                              if($selQuestionRow['exam_ch2'] == $selQuestionRow['exam_answer'])
+                                                              { ?> -->
+                                                                <span class="pl-4 text-success">B - Choice B</span><br>
+                                                            <!-- <?php }
+                                                              else
+                                                              { ?> -->
+                                                                <span class="pl-4">B - Choice B </span><br>
+                                                              <!--<?php }
+                                                              // Choice C
+                                                              if($selQuestionRow['exam_ch3'] == $selQuestionRow['exam_answer'])
+                                                              { ?> 
+                                                                <span class="pl-4 text-success">C - Choice C</span><br>
+                                                              <?php }
+                                                              else
+                                                              { ?> -->
+                                                                <span class="pl-4">C - Choice C</span><br>
+                                                             <!-- <?php } 
+                                                              // Choice D
+                                                              if($selQuestionRow['exam_ch4'] == $selQuestionRow['exam_answer'])
+                                                              { ?>
+                                                                <span class="pl-4 text-success">D - Choice D</span><br>
+                                                              <?php }
+                                                              else
+                                                              { ?>-->
+                                                                <span class="pl-4">D - Choice D</span><br>
+                                                             <!-- <?php }
+                                                             ?> -->
+                                                            
+                                                        </td>
+                                                        <td class="text-center">
+                                                         <a rel="facebox" href="facebox_modal/updateQuestion.php?id=<?php echo $selQuestionRow['eqt_id']; ?>" class="btn btn-sm btn-primary">Update</a>
+                                                         <button type="button" id="deleteQuestion" data-id="5"  class="btn btn-danger btn-sm">Delete</button>
+                                                        </td>
+                                                    </tr>
+                                         
+                                         
+                                         
+                                                   hile ($selQuestionRow = $selQuest->fetch(PDO::FETCH_ASSOC)) { ?> -->
+                                                <tr>
+                                                        <td >
+                                                            <b>Question 1 </b><br>
+                                                           <!-- <?php
+                                                              // Choice A
+                                                              if($selQuestionRow['exam_ch1'] == $selQuestionRow['exam_answer'])
+                                                              { ?> -->
+                                                                <span class="pl-4 text-success">A - Choice A</span><br>
+                                                            <!--?php }
+                                                              else
+                                                              { ?> 
+                                                                <span class="pl-4">A - Choice A</span><br>
+                                                              <?php } 
+                                                              // Choice B
+                                                              if($selQuestionRow['exam_ch2'] == $selQuestionRow['exam_answer'])
+                                                              { ?> -->
+                                                                <span class="pl-4 text-success">B - Choice B</span><br>
+                                                            <!-- <?php }
+                                                              else
+                                                              { ?> -->
+                                                                <span class="pl-4">B - Choice B </span><br>
+                                                              <!--<?php }
+                                                              // Choice C
+                                                              if($selQuestionRow['exam_ch3'] == $selQuestionRow['exam_answer'])
+                                                              { ?> 
+                                                                <span class="pl-4 text-success">C - Choice C</span><br>
+                                                              <?php }
+                                                              else
+                                                              { ?> -->
+                                                                <span class="pl-4">C - Choice C</span><br>
+                                                             <!-- <?php } 
+                                                              // Choice D
+                                                              if($selQuestionRow['exam_ch4'] == $selQuestionRow['exam_answer'])
+                                                              { ?>
+                                                                <span class="pl-4 text-success">D - Choice D</span><br>
+                                                              <?php }
+                                                              else
+                                                              { ?>-->
+                                                                <span class="pl-4">D - Choice D</span><br>
+                                                             <!-- <?php }
+                                                             ?> -->
+                                                            
+                                                        </td>
+                                                        <td class="text-center">
+                                                         <a rel="facebox" href="facebox_modal/updateQuestion.php?id=<?php echo $selQuestionRow['eqt_id']; ?>" class="btn btn-sm btn-primary">Update</a>
+                                                         <button type="button" id="deleteQuestion" data-id="5"  class="btn btn-danger btn-sm">Delete</button>
+                                                        </td>
+                                                    </tr>
+                                         
                                              <!--  <?php }
                                             }
                                             else

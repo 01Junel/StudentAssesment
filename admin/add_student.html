@@ -75,9 +75,9 @@
             <div class="content">
                 <div class="report">
                     
-                    <form method="post" action="" class="forms">
+                    <form method="" action="student.html" class="forms">
                         <h2>Add Student</h2>
-                        <?php 
+                        <!--<?php 
                             if(isset($_SESSION['validation']))
                             {
                                 echo $_SESSION['validation'];
@@ -88,7 +88,7 @@
                                 echo $_SESSION['add'];
                                 unset($_SESSION['add']);
                             }
-                        ?>
+                        ?> -->
                         <span class="name">First Name</span> 
                         <input type="text" name="first_name" placeholder="First Name" required="true" /> <br />
                         
@@ -115,7 +115,7 @@
                         
                         <span class="name">Faculty</span>
                         <select name="faculty">
-                            <?php 
+                           <!-- <?php 
                                 //Get Faculty from database
                                 $tbl_name="tbl_faculty";
                                 $where="is_active='yes'";
@@ -137,7 +137,7 @@
                                 {
                                     echo("<option value='none'>NONE</option>");
                                 }
-                            ?>
+                            ? -->
                         </select>
                         <br />
                         
@@ -149,7 +149,7 @@
                         <input type="submit" name="submit" value="Add Student" class="btn-add" style="margin-left: 15%;" />
                         <a href="<?php echo SITEURL; ?>admin/index.php?page=students"><button type="button" class="btn-delete">Cancel</button></a>
                     </form>
-                    <?php 
+                    <!-- <?php 
                         if(isset($_POST['submit']))
                         {
                             //Getting Values from the form
@@ -213,7 +213,7 @@
                                 header('location:'.SITEURL.'admin/index.php?page=add_student');
                             }
                         }
-                    ?>
+                    ?> -->
                 </div>
             </div>
         </div>

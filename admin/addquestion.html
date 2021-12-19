@@ -3,9 +3,9 @@
             <div class="content">
                 <div class="report">
                     
-                    <form method="post" action="" class="forms" enctype="multipart/form-data">
+                    <form method="" action="manage-exam.html" class="forms" enctype="multipart/form-data">
                         <h2>Add Question</h2>
-                        <?php 
+                       <!-- <?php 
                             if(isset($_SESSION['add']))
                             {
                                 echo $_SESSION['add'];
@@ -21,7 +21,7 @@
                                 echo $_SESSION['upload'];
                                 unset($_SESSION['upload']);
                             }
-                        ?>
+                        ?>-->
                         <span class="name">Question</span> <br />
                         <textarea name="question" placeholder="Add Your Question" required="true"></textarea> <br />
                         <script>
@@ -77,7 +77,7 @@
                         
                         <span class="name">Faculty</span>
                         <select name="faculty">
-                            <?php 
+                           <!-- <?php 
                                 //Get Faculties from database
                                 $tbl_name="tbl_faculty";
                                 $query=$obj->select_data($tbl_name);
@@ -100,7 +100,7 @@
                                     <option value="0">Uncategorized</option>
                                     <?php
                                 }
-                            ?>
+                            ?> -->
                             
                         </select>
                         <br />
@@ -111,10 +111,10 @@
                         <br />
                         
                         <input type="submit" name="submit" value="Add Question" class="btn-add" style="margin-left: 15%;" />
-                        <a href="<?php echo SITEURL; ?>admin/index.php?page=questions"><button type="button" class="btn-delete">Cancel</button></a>
+                        <a href="manage-exam.html"><button type="button" class="btn-delete">Cancel</button></a>
                     </form>
                     
-                    <?php 
+                  <!--  <?php 
                         if(isset($_POST['submit']))
                         {
                             //echo "Clicked";
@@ -204,7 +204,7 @@
                                 header('location:'.SITEURL.'admin/index.php?page=add_question');
                             }
                         }
-                    ?>
+                    ?> -->
                 </div>
             </div>
         </div>

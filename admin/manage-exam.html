@@ -171,7 +171,11 @@ if(!isset($_SESSION['admin']['adminnakalogin']) == true) header("location:index.
                               <!--<?php echo $selQuest->rowCount(); ?> --! --> 7
                             </span>
                              <div class="btn-actions-pane-right">
-                                <button class="btn btn-sm btn-primary " data-toggle="modal" data-target="#modalForAddQuestion">Add Question</button>
+                                <a href="addquestion.html">
+                                   <button type="button" class="btn-add">Add Question</button>
+                                </a>
+                              
+                                <!-- <button class="btn btn-sm btn-primary " data-toggle="modal" data-target="#modalForAddQuestion">Add Question</button> -->
                               </div>
                           </div>
                           <div class="card-body" >
